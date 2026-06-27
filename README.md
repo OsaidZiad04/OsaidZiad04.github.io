@@ -1,77 +1,59 @@
-# Your Name — AI/ML Engineer
+# Osaid Ziad Alhawamdeh | AI Engineer Portfolio
 
-> Replace this README with your own after setting up your site. This file is not displayed on your portfolio site — it is what visitors see when they visit your GitHub repo directly. A strong README here reinforces the professional impression your portfolio site creates.
+Live site: [https://osaidziad04.github.io/](https://osaidziad04.github.io/)
 
----
+This repository contains the GitHub Pages portfolio for Osaid Ziad Alhawamdeh, an AI Engineer focused on applied AI systems across RAG and LLM workflows, computer vision, cybersecurity AI, NLP, data analysis, and production-minded AI prototypes.
 
-## Setup Instructions
+## Featured Projects
 
-*Delete everything above and below the setup instructions once you have completed them.*
+- [SOC Copilot - AI-Powered RAG Assistant for SOC Analysts](https://github.com/OsaidZiad04/soc-copilot-rag-llm)
+- [SentinelAI - Intelligent Violence Detection System](https://github.com/OsaidZiad04/SentinelAI-Violence-Detection)
+- [PharmaGuard AI - Pharmacist-Centered AI Copilot Prototype](https://github.com/OsaidZiad04/pharmaguard-ai)
+- [Car Price Predictor](https://github.com/OsaidZiad04/car-price-predictor)
+- Network Traffic Classification case study
 
-### 1. Create your repo from this template
+## Portfolio Tech Stack
 
-Click **"Use this template"** (green button, top right) then **"Create a new repository"**.
+- Static HTML5
+- Modern CSS3
+- Vanilla JavaScript
+- GitHub Pages
+- Jekyll-compatible metadata
 
-Name your repo one of:
-- `your-github-username.github.io` — enables GitHub Pages automatically
-- `portfolio` — you will enable Pages manually in step 2
+## Local Run Instructions
 
-Set visibility to **Public** (required for GitHub Pages free tier).
+No package installation is required.
 
-### 2. Enable GitHub Pages
-
-If you used the `.github.io` naming, skip this step — Pages is already enabled.
-
-Otherwise: go to **Settings → Pages → Source → Deploy from a branch → main → / (root) → Save**.
-
-Wait 1-2 minutes, then visit your site.
-
-### 3. Customize your site
-
-1. **Edit `_config.yml`** — change `title` to your name and `description` to your tagline
-2. **Edit `index.md`** — replace the placeholder content with your own
-3. **Commit and push** — your site updates automatically in 1-2 minutes
-
-### 4. Replace the LICENSE
-
-This template ships with a LevelUp Economy educational license. Once you create your own repo from this template, **replace the LICENSE file** with a license that fits your portfolio:
-
-- **[MIT License](https://choosealicense.com/licenses/mit/)** — lets anyone use your code with attribution. Good default for open-source portfolio projects.
-- **[CC BY 4.0](https://choosealicense.com/licenses/cc-by-4.0/)** — suited for written content and creative work. Requires attribution.
-- **No license** — if you prefer to retain all rights, you can delete the LICENSE file entirely. Others can view your code on GitHub but have no explicit permission to reuse it.
-
-Choose what makes sense for your work. Visit [choosealicense.com](https://choosealicense.com/) if you are unsure.
-
-### 5. Replace this README
-
-Delete everything in this file and write your own. A good portfolio README includes:
-
-- **Your name and a one-line description** of who you are
-- **A link to your live portfolio site**
-- **A brief summary** of what the portfolio contains (e.g., "12 applied AI/ML projects spanning data pipelines, NLP, RAG systems, and deployed APIs")
-- **How to reach you** — GitHub profile, LinkedIn, email
-
-This is what hiring managers and collaborators see when they land on your repo. Make it count.
-
----
-
-## File Structure
-
-```
-your-portfolio/
-├── _config.yml                  ← Site title, description, and theme
-├── _layouts/
-│   └── default.html             ← Page layout (customized from Cayman theme)
-├── index.md                     ← Your portfolio content — edit this
-├── projects/
-│   └── sample-project.md        ← Template for project detail pages (optional)
-├── .gitignore                   ← Keeps build artifacts out of your repo
-├── LICENSE                      ← Replace with your chosen license
-└── README.md                    ← This file — replace with your own
+```bash
+python -m http.server 8000
 ```
 
----
+Then open:
 
-## License
+```text
+http://localhost:8000
+```
 
-This template is provided for educational use by [LevelUp Economy](https://levelupeconomy.com). See [LICENSE](LICENSE) for terms. Once you create your own repo from this template, replace the LICENSE with your chosen license (see step 4 above).
+## GitHub Pages Deployment
+
+This repository is designed to deploy from the `main` branch at the repository root.
+
+1. Push changes to `main`.
+2. In GitHub, confirm Pages is set to deploy from `main` and `/ (root)`.
+3. Visit [https://osaidziad04.github.io/](https://osaidziad04.github.io/) after the Pages build completes.
+
+## CV PDF
+
+The portfolio includes "Download CV" buttons that point to:
+
+```text
+assets/cv/Osaid_Ziad_Alhawamdeh_AI_Engineer_CV_2026_Final.pdf
+```
+
+If the PDF is not already in the repository, place the final CV file at that exact path before deployment.
+
+## Contact
+
+- Email: [osaidziad84@gmail.com](mailto:osaidziad84@gmail.com)
+- GitHub: [https://github.com/OsaidZiad04](https://github.com/OsaidZiad04)
+- LinkedIn: [https://www.linkedin.com/in/osaid-z-alhawamdeh/](https://www.linkedin.com/in/osaid-z-alhawamdeh/)

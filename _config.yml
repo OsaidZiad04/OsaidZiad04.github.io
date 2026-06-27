@@ -1,3 +1,6 @@
-remote_theme: pages-themes/cayman@v0.2.0
-title: "Your Name — AI/ML Engineer"
-description: "Applied AI & ML Systems Portfolio"
+title: "Osaid Ziad Alhawamdeh | AI Engineer"
+description: "AI Engineer specializing in RAG and LLM systems, computer vision, cybersecurity AI, and applied machine learning projects."
+url: "https://osaidziad04.github.io"
+baseurl: ""
+lang: "en-US"
+markdown: kramdown
