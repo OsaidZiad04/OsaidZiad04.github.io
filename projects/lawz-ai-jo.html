@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lawz AI JO Case Study | Osaid Ziad Alhawamdeh</title>
+    <meta name="description" content="Lawz AI JO is an Arabic-capable, source-grounded legal information prototype for selected Jordanian labour-law material, with visible evidence, backend-generated citations, and a guarded Neo4j proof of concept.">
+    <meta name="author" content="Osaid Ziad Alhawamdeh">
+    <meta name="theme-color" content="#0b1120">
+    <link rel="canonical" href="https://osaidziad04.github.io/projects/lawz-ai-jo.html">
+    <meta property="og:title" content="Lawz AI JO — Arabic Legal RAG Case Study">
+    <meta property="og:description" content="A source-grounded Arabic legal information prototype for selected Jordanian labour-law material.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://osaidziad04.github.io/projects/lawz-ai-jo.html">
+    <meta property="og:image" content="https://osaidziad04.github.io/assets/images/projects/lawz-ai-jo/lawz-home.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lawz AI JO — Arabic Legal RAG Case Study">
+    <meta name="twitter:description" content="A source-grounded Arabic legal information prototype for selected Jordanian labour-law material.">
+    <meta name="twitter:image" content="https://osaidziad04.github.io/assets/images/projects/lawz-ai-jo/lawz-home.jpeg">
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="stylesheet" href="../assets/css/style.css?v=portfolio-v1-lawz">
+    <link rel="stylesheet" href="../assets/css/lawz-case-study.css?v=lawz-case-study-v1">
+    <script>document.documentElement.classList.add("js");</script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Lawz AI JO",
+      "description": "A source-grounded Arabic legal information prototype for selected Jordanian labour-law material.",
+      "codeRepository": "https://github.com/Group1-team7/main-repo",
+      "programmingLanguage": ["Python", "JavaScript"],
+      "author": {
+        "@type": "Person",
+        "name": "Osaid Ziad Alhawamdeh",
+        "url": "https://osaidziad04.github.io/"
+      }
+    }
+    </script>
+</head>
+<body class="case-page lawz-case-page">
+    <a class="skip-link" href="#case-main">Skip to case study</a>
+    <div class="reading-progress-track" role="progressbar" aria-label="Reading progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <span data-reading-progress></span>
+    </div>
+
+    <header class="site-header">
+        <nav class="nav-shell" aria-label="Primary navigation">
+            <a class="brand-mark" href="../index.html#top" aria-label="Osaid Ziad Alhawamdeh — portfolio home">
+                <img src="../assets/logo-oz.svg" width="38" height="38" alt="">
+            </a>
+            <div class="nav-links">
+                <a href="../index.html#top">Home</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#skills">Skills</a>
+                <a href="../index.html#awards">Awards</a>
+                <a href="../index.html#about">About</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+            <a class="nav-cta" href="../index.html#projects">← Back to portfolio</a>
+        </nav>
+    </header>
+
+    <nav class="lawz-project-nav" aria-label="Lawz AI JO case study sections" data-case-nav>
+        <div class="lawz-project-nav-inner">
+            <a href="#overview">Overview</a>
+            <a href="#role">My role</a>
+            <a href="#architecture">Architecture</a>
+            <a href="#evidence">Evidence</a>
+            <a href="#evaluation">Evaluation</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#repository">Repository</a>
+        </div>
+    </nav>
+
+    <main id="case-main" data-case-study>
+        <header class="lawz-hero section-wrap" id="overview">
+            <div class="lawz-hero-copy reveal">
+                <p class="lawz-kicker">AI.SPIRE Capstone · Flagship Project</p>
+                <h1>Lawz AI JO</h1>
+                <p class="lawz-hero-lede">A source-grounded Arabic legal information prototype for selected Jordanian labour-law material.</p>
+                <p class="lawz-hero-summary">Lawz retrieves local legal evidence, produces an initial Arabic explanation, and returns backend-generated citations so the answer can be inspected—not simply trusted.</p>
+                <div class="lawz-hero-actions">
+                    <a class="btn btn-primary" href="#architecture">Follow the system ↓</a>
+                    <a class="btn btn-ghost" href="https://github.com/Group1-team7/main-repo" target="_blank" rel="noopener noreferrer">View repository ↗</a>
+                </div>
+            </div>
+
+            <figure class="lawz-hero-visual reveal">
+                <img src="../assets/images/projects/lawz-ai-jo/lawz-home.jpeg" width="1561" height="909" alt="Lawz AI JO homepage showing the legal assistant and knowledge graph research paths">
+                <figcaption>Lawz AI JO product interface · Arabic-capable and direction-aware</figcaption>
+            </figure>
+
+            <dl class="lawz-facts reveal" aria-label="Lawz AI JO project facts">
+                <div>
+                    <dt>Role</dt>
+                    <dd>Team Lead · Frontend · Evaluation</dd>
+                </div>
+                <div>
+                    <dt>Primary path</dt>
+                    <dd>Arabic RAG with visible citations</dd>
+                </div>
+                <div>
+                    <dt>Status</dt>
+                    <dd>Selected-corpus prototype · Not legal advice</dd>
+                </div>
+            </dl>
+        </header>
+
+        <section class="lawz-section section-wrap" id="role">
+            <div class="lawz-section-heading reveal">
+                <span class="lawz-section-index">01</span>
+                <div>
+                    <p class="lawz-kicker">Problem, scope &amp; my role</p>
+                    <h2>Turning legal answers into inspectable research.</h2>
+                </div>
+            </div>
+
+            <div class="lawz-story-grid reveal">
+                <div class="lawz-prose">
+                    <p>Jordanian labour-law questions often require Arabic research across legal provisions and supporting guidance. A general chatbot may sound confident without showing which source supports its answer.</p>
+                    <p>Lawz narrows the problem to selected labour-law material. The primary RAG path retrieves relevant evidence before generation, then exposes the supporting references in the interface.</p>
+                    <div class="lawz-boundary">
+                        <strong>Legal boundary</strong>
+                        <p>The system provides an initial AI-supported explanation. It is not lawyer-validated, not legal advice, and does not replace the official legal text or a qualified legal professional.</p>
+                    </div>
+                </div>
+
+                <div class="lawz-role-block">
+                    <p class="lawz-mini-label">Osaid's contribution</p>
+                    <ul class="lawz-role-list">
+                        <li>Team leadership and cross-component coordination</li>
+                        <li>Frontend development for an Arabic-capable, direction-aware interface</li>
+                        <li>Evaluation framework and result interpretation</li>
+                        <li>Cross-component QA and system integration</li>
+                        <li>Final technical presentation</li>
+                    </ul>
+                    <p class="lawz-ownership-note">This was a team project. These responsibilities do not imply sole ownership of the backend, retrieval, deployment, or knowledge-graph components.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="lawz-section section-wrap" id="architecture">
+            <div class="lawz-section-heading reveal">
+                <span class="lawz-section-index">02</span>
+                <div>
+                    <p class="lawz-kicker">Architecture &amp; workflow</p>
+                    <h2>Question → retrieval → grounded answer → visible citations.</h2>
+                </div>
+            </div>
+
+            <div class="lawz-architecture reveal" aria-label="Lawz AI JO primary RAG workflow">
+                <article class="lawz-system-step">
+                    <span>01 · Ask</span>
+                    <h3>Arabic legal question</h3>
+                    <p>The user asks a focused question about the selected Jordanian labour-law corpus.</p>
+                </article>
+                <article class="lawz-system-step">
+                    <span>02 · Retrieve</span>
+                    <h3>Relevant legal evidence</h3>
+                    <p>Multilingual embeddings and Weaviate retrieve legal chunks, followed by a small reranking step.</p>
+                </article>
+                <article class="lawz-system-step">
+                    <span>03 · Ground</span>
+                    <h3>Constrained explanation</h3>
+                    <p>FastAPI orchestrates a prompt grounded in the retrieved material, including weak-evidence behavior.</p>
+                </article>
+                <article class="lawz-system-step">
+                    <span>04 · Cite</span>
+                    <h3>Inspectable response</h3>
+                    <p>The backend creates citations from retrieved chunks and returns them with the Arabic answer.</p>
+                </article>
+            </div>
+
+            <div class="lawz-stack-line reveal" aria-label="Core project stack">
+                <span>Next.js interface</span>
+                <span>FastAPI orchestration</span>
+                <span>Multilingual E5</span>
+                <span>Weaviate retrieval</span>
+            </div>
+            <p class="lawz-architecture-note reveal">The model is not trusted to invent or format citations. Citation data is created server-side from the evidence returned by retrieval.</p>
+        </section>
+
+        <section class="lawz-section section-wrap" id="evidence">
+            <div class="lawz-section-heading reveal">
+                <span class="lawz-section-index">03</span>
+                <div>
+                    <p class="lawz-kicker">Evidence &amp; knowledge graph</p>
+                    <h2>Proof appears beside the explanation.</h2>
+                </div>
+            </div>
+
+            <div class="lawz-evidence-layout reveal">
+                <figure class="lawz-proof-visual">
+                    <button type="button" data-lightbox-open data-caption="Retrieved legal evidence with source identifiers and relevance details">
+                        <img src="../assets/images/projects/lawz-ai-jo/lawz-retrieved-evidence.jpeg" width="1496" height="948" alt="Lawz AI JO retrieved evidence cards with source identifiers and relevance details" loading="lazy" decoding="async">
+                    </button>
+                    <figcaption>Retrieved evidence remains available for inspection.</figcaption>
+                </figure>
+
+                <div class="lawz-prose">
+                    <h3>Evidence is part of the product.</h3>
+                    <p>The interface presents the concise answer, legal references, retrieved evidence, chunk identifiers, and technical retrieval details. A reviewer can compare the generated explanation with the context that entered the prompt.</p>
+                    <p>When the available material cannot support an answer, the system returns an explicit limitation and clears unrelated citations.</p>
+                    <div class="lawz-kg-note">
+                        <span>Guarded secondary layer</span>
+                        <h3>Neo4j proof of concept</h3>
+                        <p>A separate Text2Cypher path explores legal relationships through validated, read-only Cypher. It remains experimental and should not be described as a complete GraphRAG or as the production answer path.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lawz-section section-wrap" id="evaluation">
+            <div class="lawz-section-heading reveal">
+                <span class="lawz-section-index">04</span>
+                <div>
+                    <p class="lawz-kicker">Evaluation &amp; limitations</p>
+                    <h2>Credibility includes what the system cannot claim.</h2>
+                </div>
+            </div>
+
+            <div class="lawz-evaluation-grid reveal">
+                <div class="lawz-evaluation-method">
+                    <p class="lawz-mini-label">Evaluation framework</p>
+                    <ol>
+                        <li><strong>Baseline</strong><span>Frozen held-out set with a deterministic BM25-only Top-1 comparison.</span></li>
+                        <li><strong>Full system</strong><span>Three RAG runs to capture variation across generated responses.</span></li>
+                        <li><strong>Human judgment</strong><span>Legal correctness, evidence support, citation relevance, and material hallucination review.</span></li>
+                    </ol>
+                    <p class="lawz-status-note"><strong>Current status:</strong> the framework is implemented and final human review is in progress. No final evaluation score is claimed here.</p>
+                </div>
+
+                <aside class="lawz-limitations" aria-labelledby="limitations-title">
+                    <p class="lawz-mini-label">Current boundaries</p>
+                    <h3 id="limitations-title">What Lawz does not claim</h3>
+                    <ul>
+                        <li>Coverage beyond the selected legal corpus</li>
+                        <li>Lawyer validation or production legal advice</li>
+                        <li>A complete graph retrieval layer</li>
+                        <li>A finalized human-reviewed evaluation result</li>
+                        <li>A fully localized Arabic frontend</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <section class="lawz-section section-wrap" id="gallery">
+            <div class="lawz-section-heading reveal">
+                <span class="lawz-section-index">05</span>
+                <div>
+                    <p class="lawz-kicker">Product gallery</p>
+                    <h2>Three views, each documenting one part of the system.</h2>
+                </div>
+            </div>
+
+            <div class="lawz-gallery reveal">
+                <figure>
+                    <button type="button" data-lightbox-open data-caption="Arabic legal assistant response with visible citations and legal disclaimer">
+                        <img src="../assets/images/projects/lawz-ai-jo/lawz-legal-assistant.jpeg" width="1496" height="948" alt="Arabic Lawz AI JO response with visible citations and a legal disclaimer" loading="lazy" decoding="async">
+                    </button>
+                    <figcaption><strong>01 · Assistant</strong><span>Grounded Arabic explanation</span></figcaption>
+                </figure>
+                <figure>
+                    <button type="button" data-lightbox-open data-caption="Retrieved legal evidence with source identifiers and relevance details">
+                        <img src="../assets/images/projects/lawz-ai-jo/lawz-retrieved-evidence.jpeg" width="1496" height="948" alt="Retrieved legal evidence with source identifiers and relevance details" loading="lazy" decoding="async">
+                    </button>
+                    <figcaption><strong>02 · Evidence</strong><span>Source material for inspection</span></figcaption>
+                </figure>
+                <figure>
+                    <button type="button" data-lightbox-open data-caption="Technical retrieval details and legal references">
+                        <img src="../assets/images/projects/lawz-ai-jo/lawz-retrieval-details.jpeg" width="691" height="834" alt="Lawz AI JO technical retrieval details and legal references" loading="lazy" decoding="async">
+                    </button>
+                    <figcaption><strong>03 · Retrieval details</strong><span>References and technical context</span></figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="lawz-section section-wrap" id="repository">
+            <div class="lawz-repository reveal">
+                <div>
+                    <p class="lawz-kicker">Repository &amp; implementation</p>
+                    <h2>Inspect the system and evaluation workflow.</h2>
+                    <p>The public repository contains the Arabic RAG path, FastAPI service, Next.js interface, Weaviate retrieval, separate Neo4j proof of concept, tests, and evaluation tooling.</p>
+                </div>
+                <div class="lawz-repository-actions">
+                    <a class="btn btn-primary" href="https://github.com/Group1-team7/main-repo" target="_blank" rel="noopener noreferrer">Open repository ↗</a>
+                    <a class="btn btn-ghost" href="../index.html#projects">View all projects</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <nav class="lawz-pagination section-wrap" aria-label="Previous and next project">
+        <a href="car-price-predictor.html"><span>Previous project</span><strong>← Car Price Predictor</strong></a>
+        <a href="soc-copilot.html"><span>Next project</span><strong>SOC Copilot →</strong></a>
+    </nav>
+
+    <footer class="site-footer lawz-footer">
+        <p>Osaid Ziad Alhawamdeh · AI Engineer</p>
+        <p>© <span id="year">2026</span> · Lawz AI JO Case Study</p>
+    </footer>
+
+    <dialog class="lawz-lightbox" data-lightbox aria-label="Expanded project screenshot">
+        <img width="1200" height="800" alt="">
+        <footer>
+            <p data-lightbox-caption></p>
+            <button type="button" data-lightbox-close>Close</button>
+        </footer>
+    </dialog>
+
+    <script src="../assets/js/main.js?v=portfolio-v1-lawz" defer></script>
+    <script src="../assets/js/case-study.js?v=lawz-case-study-v1" defer></script>
+</body>
+</html>
